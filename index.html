@@ -12,14 +12,14 @@
   <form action="index.html" method="post">
     <h1>Sign Up</h1>
     <fieldset>
-    <legend><span class="number">1</span> Basic Info</legend>
+      <legend><span class="number">1</span> Basic Info</legend>
 <!-- Labels are clickable because of the 'for'. When clicked the cursor moves to box with corresponding id. -->
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="user_name">
-    <label for="mail">Email:</label>
-    <input type="email" id="mail" name="user_email">
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="user_password">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="user_name">
+      <label for="mail">Email:</label>
+      <input type="email" id="mail" name="user_email">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="user_password">
     </fieldset>
 <!--<input type="checkbox">
     <input type="color">
@@ -31,9 +31,26 @@
     <input type="tel"> -->
     <fieldset>
 <!-- 'Fieldset' breaks up the form and the 'Legend' gives it number breaks. -->
-    <legend><span class="number">2</span> Profile Info</legend>
-    <label for="bio">Bio:</label>
-    <textarea id="bio" name="user_bio"></textarea>
+      <legend><span class="number">2</span> Profile Info</legend>
+      <label for="bio">Bio:</label>
+      <textarea id="bio" name="user_bio"></textarea>
+      <label for="job">Job Role:</label>
+<!-- Select tag allows for dropdown selection menu, options are input in order to fill out the menu items that the user is allowed to choose. -->
+      <select id="job" name="user_job">
+<!-- Optgroup helps to clean up the options in the dropdown menu. -->
+      <optgroup label="Web">
+        <option value="frontend_developer">Frontend Developer</option>
+        <option value="java_developer">Java Developer</option>
+        <option value="javascript_developer">JavaScript Developer</option>
+        <option value="php_developer">PHP Developer</option>
+        <option value="python_developer">Python Developer</option>
+        <option value="ruby_developer">Ruby Developer</option>
+        </optgroup>
+        <optgroup label="Business">
+        <option value="business_owner">Business Owner</option>
+        <option value="freelancer">Freelancer</option>
+        </optgroup>
+      </select>
     </fieldset>
     <button type="submit">Sign Up</button>
   </form>
