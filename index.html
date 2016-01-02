@@ -13,7 +13,7 @@
     <h1>Sign Up</h1>
     <fieldset>
       <legend><span class="number">1</span> Basic Info</legend>
-<!-- Labels are clickable because of the 'for'. When clicked the cursor moves to box with lcorresponding id. -->
+      <!-- Labels are clickable because of the 'for'. When clicked the cursor moves to box with lcorresponding id. -->
       <label for="name">Name:</label>
       <input type="text" id="name" name="user_name">
       <label for="mail">Email:</label>
@@ -21,37 +21,36 @@
       <label for="password">Password:</label>
       <input type="password" id="password" name="user_password">
       <label>Age:</label>
-<!--  Can only select one age attribute at a time because the 'name=' is the same for both elements.  -->
+      <!--  Can only select one age attribute at a time because the 'name=' is the same for both elements.  -->
       <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Under 13</label><br>
       <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">Over 13</label>
     </fieldset>
-<!--<input type="checkbox">
-    <input type="color">
+<!--<input type="color">
     <input type="date">
     <input type="file">
     <input type="month">
     <input type="number">
     <input type="tel"> -->
     <fieldset>
-<!-- 'Fieldset' breaks up the form and the 'Legend' gives it number breaks. -->
+      <!-- 'Fieldset' breaks up the form and the 'Legend' gives it number breaks. -->
       <legend><span class="number">2</span> Profile Info</legend>
       <label for="bio">Bio:</label>
       <textarea id="bio" name="user_bio"></textarea>
       <label for="job">Job Role:</label>
-<!-- Select tag allows for dropdown selection menu, options are input in order to fill out the menu items that the user is allowed to choose. -->
+      <!-- Select tag allows for dropdown selection menu, options are input in order to fill out the menu items that the user is allowed to choose. -->
       <select id="job" name="user_job">
-<!-- Optgroup helps to clean up the options in the dropdown menu. -->
-      <optgroup label="Web">
-        <option value="frontend_developer">Frontend Developer</option>
-        <option value="java_developer">Java Developer</option>
-        <option value="javascript_developer">JavaScript Developer</option>
-        <option value="php_developer">PHP Developer</option>
-        <option value="python_developer">Python Developer</option>
-        <option value="ruby_developer">Ruby Developer</option>
+        <!-- Optgroup helps to clean up the options in the dropdown menu. -->
+        <optgroup label="Web">
+          <option value="frontend_developer">Frontend Developer</option>
+          <option value="java_developer">Java Developer</option>
+          <option value="javascript_developer">JavaScript Developer</option>
+          <option value="php_developer">PHP Developer</option>
+          <option value="python_developer">Python Developer</option>
+          <option value="ruby_developer">Ruby Developer</option>
         </optgroup>
         <optgroup label="Business">
-        <option value="business_owner">Business Owner</option>
-        <option value="freelancer">Freelancer</option>
+          <option value="business_owner">Business Owner</option>
+          <option value="freelancer">Freelancer</option>
         </optgroup>
       </select>
       <label>Interest:</label>
